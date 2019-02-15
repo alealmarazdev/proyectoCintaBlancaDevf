@@ -1,0 +1,382 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: rgba(141, 210, 250, 0.3);
+}
+
+/* header */
+/* logo */
+.logo {
+  text-decoration: none;
+  width: 40%; 
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border-radius: 50%
+}
+
+.logo.onFooter {
+  margin-left: 25%;
+}
+
+.logo:hover {
+  box-shadow: 0 10px 32px 0 rgba(0, 0, 0, 0.75);
+}
+
+h1 {
+  color: white;
+  font-family: 'Pacifico', cursive;
+  margin-top: 1%;
+  margin-left: -40%;
+  align-items: center;
+}
+
+h1.onFooter {
+  margin-left: 1%;
+}
+
+/* barra de navegacion */
+.navigation-bar {
+  width: 100vw;
+  height: 14vh;
+  background: linear-gradient(to bottom right, rgba(115, 187, 8, 0.8)5%, rgb(2, 157, 247, 0.8) 60%);
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
+.navbar li {
+  vertical-align: top;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5%;
+  margin-top: 8%;
+}
+
+li a {
+  height: 20px;
+  width: 120px;
+font-family: 'Merienda', cursive;
+  margin-bottom: 8%;
+}
+
+.divider {
+  background-color: #d9dadc;
+  height: 20px;
+    width: 3px;
+}
+
+.navigation-bar ul {
+  padding: 0;
+  margin-right: 2.5%;
+  list-style: none;
+  position: relative;
+}
+
+.navigation-bar ul li {
+  display: inline-block;
+}
+
+.navigation-bar a {
+  display: block;
+  padding: 0 10%;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.navigation-bar ul ul {
+  display: none;
+  position: absolute;
+}
+
+/* Display Dropdowns on Hover */
+.navigation-bar ul li:hover>ul {
+  display: inherit;
+  margin-top: 1.5%;
+  background: rgb(2, 157, 247, 0.5);
+  /* background-color: #000000;  */
+}
+
+/* Fisrt Tier Dropdown */
+.navigation-bar ul ul li {
+  width: 100%;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+/*  Dropdown symbol */
+li>a:after {
+  content: ' +';
+}
+
+li>a:only-child:after {
+  content: '';
+}
+
+/* contenidos */
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h2 {
+  margin-top: 8%;
+  margin-bottom: 0;
+  font-family: 'Merienda', cursive;
+}
+
+.search {
+  background: rgba(115, 187, 8, .3);
+  border: 1px solid rgba(115, 187, 8, 0.2);
+  margin-top: 0%;
+  margin-bottom: 1%;
+  width: 30%;
+  box-shadow: 0 8% 16% 0 rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+  height: 4.5%;
+  font-size: 120%;
+  font-family: 'Gabriela', serif;
+}
+
+.principal {
+  display: flex;
+}
+
+article {
+  padding: 0%;
+  margin: 0%;
+}
+
+/* tarjetas */
+.card {
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+  margin-bottom: 12%;
+  margin-left: 8%;
+  margin-right: 8%;
+  height: 44%;
+  width: 80%;
+  align-items: center;
+  background: whitesmoke;
+  border-radius: 5%;
+}
+
+.search:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 1% 8%;
+}
+
+image {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card .image {
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2% 2% 0 0;
+}
+
+h4 {
+  font-family: 'Gabriela', serif;
+}
+
+h3 {
+  font-family: 'Merienda', cursive;
+}
+
+.continue {
+  margin-top: 8%;
+  margin-bottom: 1%;
+  font-family: 'Merienda', cursive;
+}
+
+p {
+  font-family: 'Kalam', cursive;
+  font-size: 100%;
+  color: black;
+  margin: 0;
+}
+
+/* empieza  footer */
+footer {
+  margin-top: 10%;
+  background: rgb(102, 101, 101);
+  color: whitesmoke;
+  width: 100%;
+  
+  margin: 0;
+}
+
+.fcontainer {
+  width: 100%;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footerRow {
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-network-wrapper {
+  width: 100%;
+  display: flex;
+
+  margin-left: -4%;
+
+}
+
+.social-network-wrapper .social-icon {
+  background-size: cover;
+  height: 400%;
+  width: 3000%;
+  margin: 2%;
+  cursor: pointer;
+  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.social-network-wrapper .social-icon.facebook {
+  background-image: url("../img/facebook-icon.png");
+}
+
+.social-network-wrapper .social-icon.twitter {
+  background-image: url("../img/twitter-icon.png");
+}
+
+.social-network-wrapper .social-icon.linkedin {
+  background-image: url("../img/linkedin-icon.png");
+}
+
+.social-network-wrapper .social-icon.instagram {
+  background-image: url("../img/instagram-icon.png");
+}
+
+.social-network-wrapper .social-icon.youtube {
+  background-image: url("../img/youtube-icon.jpg");
+}
+
+.info {
+  padding: 0% 15%;
+  height: 200%;
+  color: white;
+  font-family: 'Merienda', cursive;
+  margin-bottom: 8%;
+  justify-content: center;
+}
+
+.info ul {
+  list-style-type: none;
+}
+
+.contactContainer {
+  display: block;
+  border-radius: 10px;
+  margin: 0;
+  max-width: 250px;
+}
+
+.contactTitle {
+  display: inline-block;
+}
+
+.contactTitle h2 {
+  padding: 0 10% 0 0;
+  margin: 5% 0;
+  color: #FBFBFB;
+}
+
+.contactForm {
+  padding: 1% 1% 0 0;
+}
+
+hr {
+  width: 200%;
+  display: block;
+  margin: 0;
+  height: 5px;
+  border: 0;
+  background-color: #FBFBFB;
+}
+
+input,
+textarea {
+  width: 100%;  
+  border-radius: 5px;
+  resize: none;
+  box-sizing: border-box;
+  font-family: 'Open Sans'sans-serif;
+  font-size: 80%;
+  color: #25606f;
+}
+
+input[type="text"] {
+  padding: 0;
+  height: 20%;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.contactForm-input {
+  margin: 4% 0 8% 0;
+}
+
+.contactForm-textarea {
+  margin: 4% 0;
+  width: 100%;
+  height: 50px
+}
+
+input[type="submit"] {
+  width: 40%;
+  height: 32%;
+  border-radius: 5px;
+  margin: 10px 0px 0 25%;
+  font-family: 'Kalam', cursive;
+  font-size: 100%; 
+}
+
+.footerCopyright{
+margin-left: 90%;
+font-family: 'Kalam', cursive;
+}
