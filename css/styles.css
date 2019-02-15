@@ -1,12 +1,3 @@
-@media screen and (min-width: 768px) {
-  h1 {
-    font-size: 3vw !important;
-  }
-
-  .navigation-bar li a {
-    font-size: 2vw !important;
-  }
-}
 body {
   width: 100%;
   height: 100%;
@@ -23,19 +14,6 @@ header {
   padding: 6px;
 }
 
-
-
-/* barra de navegacion */
-.navigation-bar {
-  /* width: 100vw; */
-  /* height: 14vh; */
-  /* margin: 0;
-  top: 0;
-  left: 0; */
-  display: flex;
-  justify-content: space-between;
-}
-
 main {
   margin-top: 60px;
   /* width: 100%;
@@ -50,16 +28,62 @@ h1 {
   color: white;
   font-family: 'Pacifico', cursive;
   font-size: 4vw;
+  display: none;
   /* margin-top: 1%;
   margin-left: -40%;
   align-items: center; */
 }
 
+/* barra de navegacion */
+.navigation-bar {
+  /* width: 100vw; */
+  /* height: 14vh; */
+  /* margin: 0;
+  top: 0;
+  left: 0; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-bar ul li {
+  display: inline-block;
+}
+
+.navigation-bar > ul > li {
+  border-left: 1px solid white;
+  padding-left: 6px;
+}
+
+
+.navigation-bar ul ul {
+  display: none;
+  position: absolute;
+}
+
+/* Display Dropdowns on Hover */
+.navigation-bar ul li:hover>ul {
+  display: inherit;
+  margin-top: 1.5%;
+  background: rgb(2, 157, 247, 0.5);
+  /* background-color: #000000;  */
+}
+
+/* Fisrt Tier Dropdown */
+.navigation-bar ul ul li {
+  width: 100%;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+
+
+
 .navigation-bar ul {
-  /* padding: 0;
-  margin-right: 2.5%;
+  /* /* padding: 0; */
+  /* margin-right: 2.5%; */
   list-style: none;
-  position: relative; */
+  /* position: relative; */ */
 }
 
 .navigation-bar li a {
@@ -74,9 +98,6 @@ h1 {
   font-family: 'Merienda', cursive;
 }
 
-.navigation-bar > a:nth-child(1) {
-  display: none;
-}
 
 /* header */
 /* logo */
@@ -124,32 +145,6 @@ h1.onFooter {
     width: 3px;
 } */
 
-
-.navigation-bar ul li {
-  display: inline-block;
-}
-
-
-.navigation-bar ul ul {
-  display: none;
-  position: absolute;
-}
-
-/* Display Dropdowns on Hover */
-.navigation-bar ul li:hover>ul {
-  display: inherit;
-  margin-top: 1.5%;
-  background: rgb(2, 157, 247, 0.5);
-  /* background-color: #000000;  */
-}
-
-/* Fisrt Tier Dropdown */
-.navigation-bar ul ul li {
-  width: 100%;
-  float: none;
-  display: list-item;
-  position: relative;
-}
 
 /*  Dropdown symbol */
 li>a:after {
