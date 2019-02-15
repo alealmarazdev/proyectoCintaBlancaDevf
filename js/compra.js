@@ -4,37 +4,37 @@ window.onload = function () {
             id: 1,
             nombre: 'Cafe o té',
             precio: 10,
-            image: 'motorcycle.jpg'
+            image: 'cafe.jpg'
         },
         {
             id: 2,
             nombre: 'Jugo',
             precio: 15,
-            image: 'motorcycle.jpg'
+            image: 'jugo.jpg'
         },
         {
             id: 3,
             nombre: 'Chilaquiles',
             precio: 50,
-            image: 'motorcycle.jpg'
+            image: 'chilaquiles.jpg'
         },
         {
             id: 4,
             nombre: 'Baguette especial',
             precio: 70,
-            image: 'motorcycle.jpg'
+            image: 'bruschetta.jpg'
         },
         {
             id: 5,
             nombre: 'Comida completa de dos tiempos',
             precio: 60,
-            image: 'motorcycle.jpg'
+            image: 'comidados.jpg'
         },
         {
             id: 6,
             nombre: 'Especial de tres tiempos',
             precio: 80,
-            image: 'motorcycle.jpg'
+            image: 'comidatres.jpg'
         },
 
     ]

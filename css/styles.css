@@ -2,7 +2,7 @@ body {
   /* width: 100%; */
   height: 100%;
   margin: 0;
-  background: rgba(141, 210, 250, 0.3);
+  background: rgb(255, 225, 159);
   display: flex;
   flex-direction: column;
 }
@@ -10,7 +10,7 @@ body {
 header {
   position: fixed;
   width: 100%;
-  background: linear-gradient(to bottom right, rgba(115, 187, 8, 0.8)5%, rgb(2, 157, 247, 0.8) 60%);
+  background: linear-gradient(to bottom right, rgba(250, 173, 6, 0.8)5%, rgba(247, 71, 2, 0.8) 90%, rgb(255, 40, 25) 100%);
   padding: 6px 0;
 }
 
@@ -89,7 +89,7 @@ h1 {
 .navigation-bar ul li:hover > ul {
   display: inherit;
   /* margin-top: 1.5%; */
-  background: rgb(2, 157, 247, 0.5);
+  background: rgba(247, 71, 2, 0.5);
   /* background-color: #000000;  */
 }
 
@@ -137,20 +137,6 @@ h6.onFooter {
   text-decoration: none; */
 }
 
-.navbar li {
-  /* vertical-align: top;
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 5%;
-  margin-top: 8%; */
-}
-
-
-/* .divider {
-  background-color: #d9dadc;
-  height: 20px;
-    width: 3px;
-} */
 
 
 /*  Dropdown symbol */
@@ -178,8 +164,8 @@ h2 {
 }
 
 .search {
-  background: rgba(115, 187, 8, .3);
-  border: 1px solid rgba(115, 187, 8, 0.2);
+  background: rgb(253, 174, 83)  ;
+  border: 1px solid rgb(252, 168, 72);
   margin-top: 0%;
   margin-bottom: 1%;
   width: 30%;
@@ -191,6 +177,66 @@ h2 {
 }
 
 
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 8px 0;
+  text-align: center;
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+input.sign {
+  background: rgb(253, 174, 83)  ;
+  border: 1px solid rgb(252, 168, 72);
+  margin-top: 0%;
+  margin-bottom: 1%;
+
+  box-shadow: 0 8% 16% 0 rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+  height: 4.5%;
+  font-size: 120%;
+  font-family: 'Gabriela', serif;
+
+}
+.nextAction-button {
+  background: rgb(253, 174, 83)  ;
+  border: 1px solid rgb(252, 168, 72);
+  margin-top: 0%;
+  margin-bottom: 1%;
+  width: 30%;
+  box-shadow: 0 8% 16% 0 rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+  height: 4.5%;
+  font-size: 120%;
+  font-family: 'Gabriela', serif;
+}
+
+.nextAction-button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.images{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+img.index{
+  width: 250px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.store{
+  display: flex;
+  justify-content: center;
+}
 article {
   padding: 0%;
   margin: 0%;
@@ -261,7 +307,7 @@ p {
 
 /* empieza  footer */
 footer {
-  background: rgb(102, 101, 101);
+  background: orangered;
   color: whitesmoke;
   width: 100%;
   margin: 0;

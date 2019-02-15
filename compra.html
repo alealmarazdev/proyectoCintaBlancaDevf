@@ -8,7 +8,8 @@
     <title>Little Commerce</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/stylesCompra.css">
-        <link href="https://fonts.googleapis.com/css?family=Gabriela|Merienda|Kalam|Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gabriela|Merienda|Kalam|Pacifico" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel="stylesheet">
 </head>
 
 <body>
@@ -28,9 +29,7 @@
                     </ul>
                 </li>
                 <li> <a class="hover" href="cerrarSesion">Cerrar sesión</a></li>
-                <!-- <li role="separator" class="divider">
-                <li> <a class="hover" href="registrarse">Registrarse</a></li>
-                <li role="separator" class="divider"></li> -->
+
 
             </ul>
         </div>
@@ -59,27 +58,65 @@
             <section id="form-main">
                 <form class="form" id="form1">
                     <p class="name">
-                        <input name="Fecha y hora de servicio" type="text" class="validate"
-                            placeholder="Fecha y hora de servicio" id="Fecha y hora de servicio" />
+                        <input name="Fecha y hora de servicio" type="text" class="validate" placeholder="Fecha y hora de servicio"
+                            id="Fecha y hora de servicio" />
                     </p> <br>
                     <p class="Confirma la direccion">
-                        <input name="Confirma la direccion" type="text" class="validate"
-                            id="email" placeholder="Confirma la direccion" />
+                        <input name="Confirma la direccion" type="text" class="validate" id="email" placeholder="Confirma la direccion" />
                     </p><br>
                     <p class="Forma de pago">
-                        <input name="Forma de pago" type="text" class="validate"
-                            id="email" placeholder="Forma de pago" />
+                        <input name="Forma de pago" type="text" class="validate" id="email" placeholder="Forma de pago" />
                     </p><br>
                     <label>Forma de pago:</label>
-                        <select name="select">
-                                <option value="Paypal">Paypal</option> 
-                                <option value="Efectivo" selected>Efectivo</option>
-                                <option value="Tarjeta de credito o debito">Tarjeta</option>
-                        </select>                                    
+                    <select name="select">
+                        <option value="Paypal">Paypal</option>
+                        <option value="Efectivo">Efectivo</option>
+                        <option value="Tarjeta de credito o debito" selected>Tarjeta</option>
+                    </select>
                 </form>
+                <!-- ------ -->
+                <section id="form-main">
+                    <form class="form tarjeta" id="form1">
+                        <div class="image" style="background-image: url('img/tarjeta.jpg')">
+                            <p class="name">
+                                <input type="text" placeholder="Bank name" class=" inputCCredit bank-name" />
+
+                                <div class="card-num">
+                                    <input class=" creditcard" type="text" maxlength="4" placeholder="1234" pattern="[0-9]{4}" />
+                                    <input class=creditcard" type="text" placeholder="1234" maxlength="4" pattern="[0-9]{4}" />
+                                    <input class=" creditcard" type="text" placeholder="1234" maxlength="4" pattern="[0-9]{4}" />
+                                    <input class=" creditcard" type="text" placeholder="1234" maxlength="4" pattern="[0-9]{4}" />
+                                </div>
+
+                                <input type="text" placeholder="Nombre del Titular" class="inputCCredit holder-name" />
+                                <div class="exp-date">
+                                    <input class=" inputCCredit inputs" pattern="[0-9]{2}" placeholder="12" type="text"
+                                        maxlength="2" />
+                                    <input class=" inputCCredit inputs" pattern="[0-9]{2}" placeholder="12" type="text"
+                                        maxlength="2" />
+                                </div>
+                                <div class="sign"></div>
+
+                                <div class="card-back">
+                                    <div class="magnet"></div>
+                                    <input class=" inputCCredit inputs" placeholder="CVC" type="text" maxlength="3"
+                                        pattern="[0-9]{3}" />
+                                </div>
+                        </div>
+
+                        <div class="submit pagar">
+                            <input type="submit" class="inputCCredit" value="Pagar" />
+                        </div>
+
+                    </form>
+
+
+                    <!-- ------- -->
+
+
+                </section>
+                <!-- <button class="send" type="button">¡Enviar!</button> -->
             </section>
-            <!-- <button class="send" type="button">¡Enviar!</button> -->
-        </section>
     </main>
 
     <footer>
@@ -127,9 +164,8 @@
             Copyright &copy; 2019.
         </div>
     </footer>
- <script src="js/compra.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/compra.js"></script>
 </body>
 
 </html>
-
-   
