@@ -48,7 +48,8 @@ h1 {
 .navigation-bar a {
   display: flex;
   align-items: center;
-  margin-left: 12px
+  margin-left: 12px;
+  text-decoration: none;
 }
 
 .navigation-bar ul {
@@ -122,8 +123,10 @@ h1 {
 }
 
 
-h1.onFooter {
-  margin-left: 1%;
+h6.onFooter {
+  margin: 12px 0 24px 0;
+  font-size: 19px;
+  font-family: 'Pacifico', cursive;
 }
 
 
@@ -207,7 +210,7 @@ article {
   width: 80%;
   /* align-items: center; */
   background: whitesmoke;
-  border-radius: 5%;
+  border-radius: 12px;
   margin-bottom: 36px;
 }
 
@@ -232,7 +235,7 @@ image {
   height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 2% 2% 0 0;
+  border-radius: 12px 12px 0 0;
 }
 
 h4 {
@@ -258,25 +261,17 @@ p {
 
 /* empieza  footer */
 footer {
-  margin-top: 10%;
   background: rgb(102, 101, 101);
   color: whitesmoke;
   width: 100%;
-  
   margin: 0;
+  padding-top: 24px;
 }
 
-.fcontainer {
-  width: 100%;  
+footer .info {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-}
-
-.footerRow {
-  margin: 1%;
-  display: flex;
-  flex-direction: column;
 }
 
 .social-network-wrapper {
@@ -289,14 +284,14 @@ footer {
 
 .social-network-wrapper .social-icon {
   background-size: cover;
-  height: 400%;
-  width: 3000%;
-  margin: 2%;
   cursor: pointer;
   border: 1px solid whitesmoke;
   background-color: whitesmoke;
   border-radius: 50%;
   z-index: 0;
+  height: 24px;
+  width: 24px;
+  margin-right: 12px;
 }
 
 .social-network-wrapper .social-icon.facebook {
@@ -319,17 +314,13 @@ footer {
   background-image: url("../img/youtube-icon.jpg");
 }
 
-.info {
+.enlacesUtiles {
   padding: 0% 15%;
   height: 200%;
   color: white;
   font-family: 'Merienda', cursive;
   margin-bottom: 8%;
   justify-content: center;
-}
-
-.info ul {
-  list-style-type: none;
 }
 
 .contactContainer {
@@ -349,15 +340,15 @@ footer {
   color: #FBFBFB;
 }
 
-.contactForm {
-  padding: 1% 1% 0 0;
+#contactform {
+  width: 80%;
+  margin: 0 auto;
 }
 
 hr {
-  width: 200%;
   display: block;
-  margin: 0;
-  height: 5px;
+  margin: 0 0 12px 0;
+  height: 1px;
   border: 0;
   background-color: #FBFBFB;
 }
@@ -371,6 +362,7 @@ textarea {
   font-family: 'Open Sans'sans-serif;
   font-size: 80%;
   color: #25606f;
+  margin-bottom: 12px;
 }
 
 input[type="text"] {
@@ -382,10 +374,6 @@ input[type="text"] {
 input:focus,
 textarea:focus {
   outline: none;
-}
-
-.contactForm-input {
-  margin: 4% 0 8% 0;
 }
 
 .contactForm-textarea {
@@ -404,12 +392,16 @@ input[type="submit"] {
 }
 
 .footerCopyright{
-margin-left: 90%;
 font-family: 'Kalam', cursive;
+margin: 12px 0;
 }
 
 @media only screen and (min-width: 769px) {
   #title {
     display: inline-block
+  }
+
+  .card {
+    width: 30%;
   }
 }
