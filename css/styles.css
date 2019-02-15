@@ -187,27 +187,28 @@ h2 {
   font-family: 'Gabriela', serif;
 }
 
-.principal {
-  display: flex;
-}
 
 article {
   padding: 0%;
   margin: 0%;
 }
 
+.principal {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+}
+
 /* tarjetas */
 .card {
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5);
   transition: 0.4s;
-  margin-bottom: 12%;
-  margin-left: 8%;
-  margin-right: 8%;
-  height: 44%;
   width: 80%;
-  align-items: center;
+  /* align-items: center; */
   background: whitesmoke;
   border-radius: 5%;
+  margin-bottom: 36px;
 }
 
 .search:hover {
